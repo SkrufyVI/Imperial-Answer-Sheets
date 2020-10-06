@@ -1,12 +1,12 @@
-	/* This program prompts the user for the current year, the user's 
-	current age, and another year. It then calculates the age 
-	that the user was or will be in the second year entered. */ 
+/* This program prompts the user for the current year, the user's 
+current age, and another year. It then calculates the age 
+that the user was or will be in the second year entered. */ 
+
+/*if "another_age" works out to be more than 150, the screen output is:
+ Sorry, but you'll probably be dead by [year]! */
   
-  /*if "another_age" works out to be more than 150, the screen output is:
-  Sorry, but you'll probably be dead by [year]! */
-  
-  /* Finally, ensure the program can deal with months as well as years, and produce outputs such as the following:
-  	Your age in 6/2001: 41 years and 1 month.*/
+ /*Finally, ensure the program can deal with months as well as years, and produce outputs such as the following:
+Your age in 6/2001: 41 years and 1 month.*/
     
 #include <iostream>
 #include <cmath>
