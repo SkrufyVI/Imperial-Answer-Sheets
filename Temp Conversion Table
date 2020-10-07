@@ -1,0 +1,62 @@
+// Write a program that displays a temperature conversion chat for Fahrenheit, Celcius and Absolute Value
+
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <list>
+
+using namespace std;
+
+int main()
+{
+    // Request user input;
+
+    double lowest_temperature;
+    double highest_temperature;
+    double increment;
+
+    cout << "Lowest Fahrenheit temperature: ";
+    cin >> lowest_temperature;
+
+    cout << "Highest Fahrenheit temperature: ";
+    cin >> highest_temperature;
+
+    cout << "Increment of temperature, i.e. step size: ";
+    cin >> increment;
+
+    // Print out headings;
+
+    cout.width(15);
+    cout << "Fahrenheit";
+    cout.width(27);
+    cout << "Celcius";
+    cout.width(35);
+    cout << "Absolute Value\n\n";
+
+    // Loop - starting from lowest temp to highest temp.
+
+    for (double i = lowest_temperature; i <= highest_temperature; i += increment)
+
+    {
+        // Fahrenheit
+        cout.precision(0);
+        cout.width(10);
+        cout << i;
+
+        // Convert to 2.d.p.
+        cout.setf(ios::fixed);
+        cout.precision(2);
+
+        // Celcius
+        cout.width(30);
+        double j = (((i-32)*5.0)/9.0);
+        cout << j;
+
+        // Absolute Value
+        cout.width(30);
+        cout << (j+273.15) << endl;
+
+        }
+
+    return 0;
